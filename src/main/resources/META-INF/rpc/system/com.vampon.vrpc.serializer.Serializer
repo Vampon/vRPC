@@ -1,0 +1,2 @@
+jdk=com.vampon.vrpc.serializer.JdkSerializer
+hessian=com.vampon.vrpc.serializer.HessianSerializer
