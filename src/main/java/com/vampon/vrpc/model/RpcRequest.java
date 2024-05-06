@@ -1,5 +1,5 @@
 package com.vampon.vrpc.model;
-
+import com.vampon.vrpc.constant.RpcConstant;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,6 +23,11 @@ public class RpcRequest implements Serializable {
     private String serviceName;
 
     /**
+     * 服务版本号
+     */
+    private String serviceVersion = RpcConstant.DEFAULT_SERVICE_VERSION;
+
+    /**
      * 方法名称
      */
     private String methodName;
@@ -36,5 +41,7 @@ public class RpcRequest implements Serializable {
      * 参数列表
      */
     private Object[] args;
+
+
 
 }
